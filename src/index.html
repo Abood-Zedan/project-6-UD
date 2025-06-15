@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preparing for Production</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Preparing for Production Demo</h1>
+    <nav>
+      <ul id="menu">
+        <li data-cy="menu-home"><a href="#home">Home</a></li>
+        <li data-cy="menu-create"><a href="#create">Create Set</a></li>
+        <li data-cy="menu-about"><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section>
+      <h2>Shuffle a List</h2>
+      <button id="shuffleBtn" data-cy="shuffle-btn">Shuffle Numbers</button>
+      <pre id="output"></pre>
+    </section>
+
+    <section id="create">
+      <h2>Create Set</h2>
+      <form id="createForm" data-cy="create-form">
+        <input type="text" id="setName" placeholder="Set name" />
+        <button type="submit">Save</button>
+        <p id="formError" class="error"></p>
+      </form>
+    </section>
+
+    <section id="about">
+      <h2>About This Project</h2>
+      <p>This sample project demonstrates preparing a front‑end app for production.</p>
+      <img src="https://source.unsplash.com/featured/400x200?code" alt="About illustration" />
+    </section>
+  </main>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+}

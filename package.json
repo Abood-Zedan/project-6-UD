@@ -1,0 +1,23 @@
+{
+  "name": "preparing-for-production-project",
+  "description": "Sample project prepared for production with Parcel, Gulp, ESLint, Prettier, Mocha and Cypress.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir dist",
+    "test": "mocha",
+    "lint": "eslint \"src/**/*.js\"",
+    "e2e": "cypress run"
+  },
+  "devDependencies": {
+    "chai": "^4.4.1",
+    "cypress": "^12.16.0",
+    "eslint": "^8.56.0",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-shell": "^0.8.0",
+    "mocha": "^10.4.0",
+    "parcel": "^2.11.0"
+  }
+}
